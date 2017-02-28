@@ -54,6 +54,7 @@ var ViewModel = function () {
             data: json,
             success: function (data) {
                 alert(data);
+                window.location = "http://localhost:60488/ViewPerson.aspx";
             },
             error: function (request, error) {
                 alert(error.responseJSON.Message);
